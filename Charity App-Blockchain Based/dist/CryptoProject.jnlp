@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CryptoProject.jnlp">
+  <information>
+    <title>CryptoProject</title>
+    <vendor>sai81</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CryptoProject.jar" size="642587" download="eager" />
+    <jar href="lib\gson-2.2.2.jar" size="189285" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CryptoProject" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="cryptoproject.CryptoProject"  name="CryptoProject" />
+  <update check="always"/>
+</jnlp>

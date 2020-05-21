@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cryptoproject.TransactionsController">
+   <top>
+      <AnchorPane prefHeight="83.0" prefWidth="700.0" style="-fx-background-color: #1e90ff;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="32.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HAPY">
+               <font>
+                  <Font name="Segoe UI Bold" size="50.0" />
+               </font>
+            </Text>
+            <Button fx:id="goback" layoutX="595.0" layoutY="37.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;" text="Go back" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="173.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Miner: HAPY.com">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <TableView fx:id="t_table" prefHeight="417.0" prefWidth="732.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="t_hash" prefWidth="175.20001828670502" text="Hash" />
+          <TableColumn fx:id="t_height" minWidth="0.0" prefWidth="58.39996337890625" text="Height" />
+            <TableColumn fx:id="t_donor" prefWidth="242.39996337890625" text="Donor ID" />
+            <TableColumn fx:id="t_charity" prefWidth="112.80001831054688" text="Charity" />
+            <TableColumn fx:id="t_time" prefWidth="112.00006103515625" text="Time" />
+        </columns>
+      </TableView>
+   </left>
+</BorderPane>
